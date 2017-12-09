@@ -9,9 +9,9 @@ var sift = require('sift');
 
 var manifest = { 
     "name": "Popcorn Time",
-    "description": "Watch from YTS and EZTV in Stremio",
+    "description": "Watch from Popcorn Time API in Stremio",
     //"icon": "URL to 256x256 monochrome png icon", "background": "URL to 1366x756 png background",
-    "id": "org.jcb9090.popcorn",
+    "id": "org.stremio.popcorn",
     "version": "1.0.0",
     "types": ["movie", "series"],
     "filter": { 
@@ -20,8 +20,8 @@ var manifest = {
         "sort.popularities.yts": { "$exists": true },
         "projection.imdb_id": { "$exists": true }
     },
-    "contactEmail": "JBC9090@tuta.io",
-    "endpoint": "http://pct.addons4stremio.xyz/stremioget/stremio/v1",
+    "contactEmail": "cflo360@devmega.com",
+    "endpoint": "http://popcorntimev3.cloudno.de/stremioget/stremio/v1",
     "background": "https://raw.githubusercontent.com/butterproject/butter-desktop/master/src/app/images/bg-header.jpg",
     sorts: [ { prop: "popularities.yts", name: "Popcorn Time", types: ["movie"] } ]
 };
